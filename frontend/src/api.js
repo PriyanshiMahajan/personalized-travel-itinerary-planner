@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const BASE = import.meta.env.VITE_API_URL || "https://personalized-travel-itinerary-plann-chi.vercel.app";
 let uid = localStorage.getItem("uid");
 if (!uid) { uid = crypto.randomUUID(); localStorage.setItem("uid", uid); }
 async function req(path, method = "GET", body) {
